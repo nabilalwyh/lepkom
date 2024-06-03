@@ -1,0 +1,48 @@
+--WEB FORM 1--
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href=" StyleSheet1.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="top">
+        <h1>Nama saya Nabila Alawiyah</h1>
+        <h1>NPM saya 51422187</h1>
+        <h1>Kelas saya 2IA21</h1>
+    </div>
+    <div id="center">
+        <h1>Hoby saya: Wisata Kuliner</h1>
+    </div>
+    <div id="bottom">
+        <h1>Lagu kesukaan: Sheila on 7 - Pemuja Rahasia</h1>
+    </div>
+    </form>
+</body>
+</html>
+ 
+ 
+ 
+--STYLE CSS 1--
+body {
+}
+#top {
+    background-color: #ff8e3c;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+#center {
+    background-color: #eebbc3;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+#bottom {
+    background-color: #b8c1ec;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}

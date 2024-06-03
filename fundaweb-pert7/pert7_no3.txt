@@ -1,0 +1,74 @@
+-- WEB FORM 3 --
+<!DOCTYPE html>
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet2.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="belakang">
+    </div>
+    <form id="form1" runat="server">
+        <div id="atas">
+             <asp:Label ID="Label1" runat="server" Text="Label1" ForeColor="#543310"></asp:Label>
+            <div id="tengah">
+                <p>
+                 <asp:Button ID="Button1" runat="server" Height="25px" style="margin-top: 0px" Text="Klik" ForeColor="#543310" Backcolor="#F8F4E1"/>
+                    </p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+ 
+-- STYLE SHEET CSS --
+body {
+ 
+}
+#belakang {
+    background-color: #F8F4E1;
+    position: relative;
+    width: 100%;
+    height: 180px;
+    top: -11px;
+    left: 2px;
+}
+ 
+#atas {
+    background-color: #AF8F6F;
+    position: relative;
+    width: 90%;
+    height: 25px;
+    top: -175px;
+    left: 17px;
+}
+ 
+#tengah {
+    background-color: #74512D;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    top: 8px;
+    left: -1px;
+    margin-top: 0px;
+}
+ 
+-- WEB FORM ASPX --
+namespace Pert_7
+{
+    public partial class WebForm3 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                Label1.Text = "Ini adalah halaman awal";
+            }
+            else
+            {
+                Label1.Text = "Ini adalah halaman postback";
+            }
+        }
+    }
+}

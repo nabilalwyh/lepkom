@@ -1,0 +1,37 @@
+-- WEB FORM 2 --
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        </div>
+        <p>
+            <asp:Button ID="Button1" runat="server" Text="Button" />
+        </p>
+    </form>
+</body>
+</html>
+ 
+-- WEB FORM ASPX --
+namespace pert7_51422187
+{
+    public partial class WebForm2 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                Label1.Text = "Ini adalah halaman awal";
+            }
+            else
+            {
+                Label1.Text = "Ini adalah halaman postback";
+            }
+        }
+    }
+}
